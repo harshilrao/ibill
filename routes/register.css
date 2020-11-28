@@ -1,0 +1,175 @@
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+}
+
+body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+.card-signin {
+  border: 0;
+  width: 500px;
+  height: 700px;
+  border-radius: 8rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.card-signin .card-title {
+  margin-bottom: 0px;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.card-signin .card-body {
+  padding: 2rem;
+
+}
+
+
+
+
+
+
+/* Fallback for Edge
+-------------------------------------------------- */
+
+p{
+  text-align: right;
+  position: relative;
+
+}
+
+
+#wrapper label{
+  color: rgb(64, 92, 96);
+  position: relative;
+
+}
+
+
+/* form başlangıç stiller ------------------------------- */
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.form-label-group input {
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+
+ 
+}
+/*after clicking on fields box will not appear*/
+.form-label-group input:focus {
+    outline: none;
+}
+/* LABEL ======================================= */
+
+.form-label-group label {
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+     pointer-events: none;
+    left: 5px;
+    top: 5px;
+    transition: 0.2s ease all;
+
+
+
+}
+/* for eg email will not appear while inputing email */
+
+.form-label-group input:focus ~ label,
+input:valid ~ label {
+   
+    font-size: 14px;
+    color: black;
+}
+/* BOTTOM BARS ================================= */
+
+.span-input {
+   
+    position: relative;
+    top: -5px;
+
+}
+
+
+#line1{
+  margin: auto;
+  text-align: center;
+}
+#signupp{
+    margin: auto;
+  text-align: center;
+
+}
+#signupp a{
+    color: black;
+    font-size: 12px;
+}
+
+button{
+    margin: auto;
+  text-align: center;
+}
+hr{
+  margin-top: 0px;
+}
+
+.form-signin hr{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.card-body img{
+  margin-left: 80px;
+  margin-top: 3px;
+}
+#login button{
+  background-color: black;
+  width: 120px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-group label{
+  padding: 5px;
+
+}
+
+.search-container {
+  float: right;
+  margin-left: 740px;
+ 
+}
+
+.collapse input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+    border:5px solid black;
+}
+
+.search-container button {
+  float: right;
+  margin-top: 8px;
+  
+  border:5px solid black;
+  height: 47px;
+  width: 40px;
+  margin-bottom: 1px;
+}
+
+.search-container button:hover {
+  background: white;
+}
+
