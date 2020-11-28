@@ -10,18 +10,19 @@ const app = express();
 // Passport Config
 require('./config/passport')(passport);
 
-mongoose.connect('mongodb://localhost/ibill')
-let db = mongoose.connection;
 
-//check connection
-db.once('open', function(err){
-    console.log('connected to MongoDB')
-})
+// DB Config
+const db = require('./config/keys').mongoURI;
 
-//check for db errors
-db.on('error',function(err){
-    console.log(err)
-})
+// Connect to MongoDB
+mongoose
+  .connect(
+    db,
+    { useNewUrlParser: true ,useUnifiedTopology: true}
+  )
+  .then(() => console.log('MongoDB Connected'))
+  .catch(err => console.log(err));
+
 
 // EJS
 app.use(express.static(__dirname + '/views'));
